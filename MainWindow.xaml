@@ -5,8 +5,43 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WPF_UserDataBase"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="720" Width="1280">
     <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="640" />
+            <ColumnDefinition Width="640" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="360"/>
+            <RowDefinition Height="360"/>
+        </Grid.RowDefinitions>
+        
+        <DataGrid x:Name="grdDataTable" Grid.Row="0" Grid.RowSpan="2" Grid.Column="0"/>
 
+        <StackPanel Orientation="Vertical" Grid.Row="0" Grid.Column="2">
+            <StackPanel.Resources>
+                <Style TargetType="{x:Type TextBox}">
+                    <Setter Property="Margin" Value="0,5,0,5" />
+                </Style>
+                <Style TargetType="{x:Type Button}">
+                    <Setter Property="Margin" Value="10,5,10,5" />
+                </Style>
+            </StackPanel.Resources>
+            <TextBox x:Name="txtName" Width="150" />
+            <TextBox x:Name="txtSurname" Width="150" />
+            <TextBox x:Name="txtAge" Width="75" />
+            <Button x:Name="btnAddUser" Width="150" Height="30">Add User</Button>
+            <Button x:Name="btnRemoveUser" Width="150" Height="30">Remove User</Button>
+        </StackPanel>
+
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="center" Grid.Row="1" Grid.Column="2">
+            <StackPanel.Resources>
+                <Style TargetType="{x:Type Button}">
+                    <Setter Property="Margin" Value="10,0,10,0" />
+                </Style>
+            </StackPanel.Resources>
+            <Button x:Name="btnClearData" Width="150" Height="30">Clear JSON File</Button>
+            <Button x:Name="btnGetData" Width="150" Height="30">Get JSON File</Button>
+        </StackPanel>
     </Grid>
 </Window>
