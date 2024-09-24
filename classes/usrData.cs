@@ -4,10 +4,14 @@ namespace WPF_UserDataBase;
 
 public class usrData{
     public usrData(){
-
+        if(Name == null)
+            Name = "";
+        if(Surname == null)
+            Surname = "";
     }
 
-    private string Name {get; set;}
-    private string Surname {get; set;}
-    private int Age {get; set;}
+    public int Id {get; set;}
+    public string Name {get; set;}
+    public string Surname {get; set;}
+    public int Age {get; set;}
 }

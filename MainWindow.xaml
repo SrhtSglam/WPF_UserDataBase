@@ -30,7 +30,7 @@
             <TextBox x:Name="txtName" Width="150" Height="30" />
             <TextBox x:Name="txtSurname" Width="150" Height="30" />
             <TextBox x:Name="txtAge" Width="75" Height="30" />
-            <Button x:Name="btnAddUser" Width="150" Height="30">Add User</Button>
+            <Button x:Name="btnAddUser" Width="150" Height="30" Click="AddUser_Click">Add User</Button>
             <Button x:Name="btnRemoveUser" Width="150" Height="30">Remove User</Button>
         </StackPanel>
 
@@ -40,8 +40,8 @@
                     <Setter Property="Margin" Value="10,0,10,0" />
                 </Style>
             </StackPanel.Resources>
-            <Button x:Name="btnClearData" Width="150" Height="30">Clear JSON File</Button>
-            <Button x:Name="btnGetData" Width="150" Height="30">Get JSON File</Button>
+            <Button x:Name="btnClearData" Width="150" Height="30" Click="ClearData_Click">Clear JSON File</Button>
+            <Button x:Name="btnGetData" Width="150" Height="30" Click="GetData_Click">Get JSON File</Button>
         </StackPanel>
     </Grid>
 </Window>

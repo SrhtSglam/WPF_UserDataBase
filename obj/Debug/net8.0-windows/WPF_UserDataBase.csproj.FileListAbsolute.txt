@@ -19,3 +19,6 @@ C:\Users\serha\Documents\GitHub\WPF_UserDataBase\obj\Debug\net8.0-windows\refint
 C:\Users\serha\Documents\GitHub\WPF_UserDataBase\obj\Debug\net8.0-windows\WPF_UserDataBase.pdb
 C:\Users\serha\Documents\GitHub\WPF_UserDataBase\obj\Debug\net8.0-windows\WPF_UserDataBase.genruntimeconfig.cache
 C:\Users\serha\Documents\GitHub\WPF_UserDataBase\obj\Debug\net8.0-windows\ref\WPF_UserDataBase.dll
+C:\Users\serha\Documents\GitHub\WPF_UserDataBase\obj\Debug\net8.0-windows\WPF_UserDataBase.csproj.AssemblyReference.cache
+C:\Users\serha\Documents\GitHub\WPF_UserDataBase\bin\Debug\net8.0-windows\Newtonsoft.Json.dll
+C:\Users\serha\Documents\GitHub\WPF_UserDataBase\obj\Debug\net8.0-windows\WPF_UserDataBase.csproj.CopyComplete
